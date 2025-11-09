@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velocidad del concreto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Ingrese la altura a la que quiere determinar la velocidad (máx. 6.75 m)</h1>
+    <form id="formulario" onsubmit="return false;">
+      <input type="number" id="rotoplax" placeholder="Ingrese la altura en metros" step="0.01" min="0" max="6.75">
+      <button type="button" onclick="autorizar()">Calcular</button>
+    </form>
+  </div>
+
+
+<div class="animacion-megamix">
+  <img src="img/gif.gif" alt="Camión vertiendo concreto">
+</div>
+
+
+  <div id="resultado"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
